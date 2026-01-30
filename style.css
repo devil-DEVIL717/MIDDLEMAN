@@ -2,62 +2,121 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
 body {
-  background-color: #0b0b0b;
+  background: #0b0f14;
   color: #ffffff;
   text-align: center;
 }
 
-header {
-  padding: 60px 20px;
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url("assets/banner.png") center/cover no-repeat;
+  position: relative;
 }
 
-header h1 {
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #ffffff;
+}
+
+.hero h1 {
   font-size: 42px;
   margin-bottom: 10px;
 }
 
-header p {
-  color: #aaaaaa;
+.hero p {
+  color: #cccccc;
+  margin-bottom: 25px;
 }
 
+.btn {
+  background: #1abc9c;
+  color: #000;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #16a085;
+}
+
+/* STATS */
 .stats {
   display: flex;
   justify-content: center;
   gap: 30px;
-  padding: 40px 20px;
+  padding: 50px 20px;
 }
 
 .stats div {
-  background: #141414;
+  background: #141a22;
   padding: 25px;
-  width: 160px;
-  border-radius: 12px;
+  width: 170px;
+  border-radius: 15px;
 }
 
 .stats h2 {
-  font-size: 30px;
+  font-size: 32px;
 }
 
 .stats span {
-  color: #888;
+  color: #9aa4af;
 }
 
+/* MIDDLEMAN */
+.middleman {
+  padding: 50px 20px;
+}
+
+.mm-card {
+  background: #141a22;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.mm-name {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.mm-desc {
+  color: #8bd3c7;
+}
+
+/* VOUCHES */
 .vouches {
   padding: 50px 20px;
 }
 
-.card {
-  background: #141414;
+.vouch {
+  background: #141a22;
   margin: 15px auto;
   padding: 20px;
-  max-width: 420px;
-  border-radius: 10px;
+  max-width: 450px;
+  border-radius: 12px;
 }
 
+/* RULES */
 .rules {
   padding: 50px 20px;
 }
@@ -68,21 +127,13 @@ header p {
 
 .rules li {
   margin: 12px 0;
+  color: #cfd8e3;
 }
 
-.contact {
-  padding: 40px 20px;
-}
-
-.contact a {
-  color: #4da6ff;
-  text-decoration: none;
-}
-
+/* FOOTER */
 footer {
-  background: #141414;
+  background: #141a22;
   padding: 20px;
-  margin-top: 40px;
   font-size: 14px;
-  color: #777;
+  color: #9aa4af;
 }
